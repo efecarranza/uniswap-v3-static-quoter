@@ -2,7 +2,7 @@
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
-import "../../IUniV3likeQuoterCore.sol";
+import "../../IUniV4likeQuoterCore.sol";
 
 struct QuoteExactInputSingleParams {
     address tokenIn;
@@ -11,7 +11,7 @@ struct QuoteExactInputSingleParams {
     uint160 sqrtPriceLimitX96;
 }
 
-interface IAlgebraStaticQuoter is IUniV3likeQuoterCore {
+interface IIntegralStaticQuoter is IUniV4likeQuoterCore {
     function quoteExactInputSingle(
         QuoteExactInputSingleParams memory params
     ) external view returns (uint256 amountOut);

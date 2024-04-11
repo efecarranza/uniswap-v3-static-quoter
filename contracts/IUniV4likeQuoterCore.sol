@@ -38,7 +38,7 @@ struct StepComputations {
     uint256 feeAmount;
 }
 
-interface IUniV3likeQuoterCore {
+interface IUniV4likeQuoterCore {
     function quote(
         address poolAddress,
         bool zeroForOne,
